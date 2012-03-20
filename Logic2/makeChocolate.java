@@ -17,17 +17,17 @@ public int makeChocolate(int small, int big, int goal) {
 	// Find the number of big
 	while (big*5 > goal) 
 	{
-	   big--;
+		big--;
 	}
-     // Add big bars
+	// Add big bars
 	total = big * 5;
 	// Determine small to use
 	if (goal - total <= small) 
-    {
-    	return goal - total; 
+	{
+	    	return goal - total; 
 	} 
 	else     
-    {
-    	return -1;
-    }
+    	{
+    		return -1;
+    	}
 }
